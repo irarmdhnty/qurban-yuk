@@ -83,14 +83,14 @@ const Navbars = () => {
 
             <Dropdown.Menu>
               <Dropdown.Item>
-                <Link to="/profile" className="fs-4 text-color fw">
+                <Link to="/profile" className="fs-4 text-color px-3">
                   {state.user?.fullName}
                 </Link>
               </Dropdown.Item>
               <Dropdown.Item>
                 <Link
                   to="/category"
-                  className="fs-5 text-color "
+                  className="fs-5 text-color px-3"
                   hidden={state.user?.role !== "user"}
                 >
                   Category
