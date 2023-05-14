@@ -83,6 +83,11 @@ const Navbars = () => {
 
             <Dropdown.Menu>
               <Dropdown.Item>
+                <Link to="/profile" className="fs-4 text-color fw">
+                  {state.user?.fullName}
+                </Link>
+              </Dropdown.Item>
+              <Dropdown.Item>
                 <Link
                   to="/category"
                   className="fs-5 text-color "
