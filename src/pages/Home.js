@@ -5,7 +5,7 @@ import Icon from "../assets/header.png";
 const Home = () => {
   return (
       <Container>
-        <Row className="d-flex align-items-center justify-content-between home">
+        <Row className="d-flex align-items-center justify-content-between">
           <Col className="col-12 col-lg-5">
           <div className="text-center ">
             <h2>Yuk Qurban</h2>
