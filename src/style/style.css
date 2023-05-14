@@ -1,0 +1,27 @@
+.text-color{
+    color: #1f640a !important;
+    text-decoration: none;
+}
+
+.btn-color {
+  background-color: #3EB319 !important;
+  border: none;
+  border-color: #3EB319 !important;
+}
+
+.btn-color:hover {
+  background-color: #308c14 !important;
+}
+
+.home{
+    height: 700px;
+}
+
+.btn-detail{
+    margin-top: 150px;
+}
+
+.add-form{
+    background-color: #0ce60c4e;
+    height: 620px;
+}

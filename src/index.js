@@ -1,13 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { QueryClient, QueryClientProvider } from "react-query";
+import { UserContextProvider } from "./Usercontext/Usercontext";
+import { BrowserRouter as Router } from "react-router-dom";
+import Navbars from "./Components/Navbars";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const client = new QueryClient();
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <UserContextProvider>
+      <QueryClientProvider client={client}>
+        <Router>
+          <Navbars />
+          <App />
+        </Router>
+      </QueryClientProvider>
+    </UserContextProvider>
   </React.StrictMode>
 );
 
