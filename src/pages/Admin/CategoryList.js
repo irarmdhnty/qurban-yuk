@@ -43,6 +43,8 @@ const CategoryList = () => {
             <Card.Body>
               <Card.Title className="text-center">{item?.name}</Card.Title>
               <Card.Body>{convertRupiah.convert(item?.price)}</Card.Body>
+            </Card.Body>
+            <Card.Footer>
               <div className="d-flex justify-content-between">
                 <Button
                   className="btn-primary w-100 m-2"
@@ -60,7 +62,7 @@ const CategoryList = () => {
                   delete
                 </Button>
               </div>
-            </Card.Body>
+            </Card.Footer> 
           </Card>
         ))}
       </div>

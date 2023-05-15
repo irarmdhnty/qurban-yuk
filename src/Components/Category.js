@@ -26,7 +26,8 @@ const Category = () => {
           <Card.Body>
             <Card.Title className="text-center">{item?.name}</Card.Title>
             <Card.Body>{convertRupiah.convert(item?.price)}</Card.Body>
-            <div className="d-flex justify-content-between">
+          </Card.Body>
+            <div className="d-flex justify-content-between mb-2 p-3">
               <Button
                 className="btn-color w-100"
                 onClick={() => navigate(`/detail/${item?.id}`)}
@@ -34,7 +35,6 @@ const Category = () => {
                 Detail
               </Button>
             </div>
-          </Card.Body>
         </Card>
       ))}
     </div>

@@ -25,3 +25,10 @@
     background-color: #0ce60c4e;
     height: 620px;
 }
+
+.button {
+  display: flex;
+  align-items: flex-end;
+  margin-top: auto;
+  padding: 20px; 
+}
